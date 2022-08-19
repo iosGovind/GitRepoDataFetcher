@@ -7,16 +7,18 @@
 
 import Foundation
 
-public enum Platform: String {
-    case iOS = "ios"
-    case android
-}
-
+// MARK: WebServices
+// =================
 class WebServices {
+    // MARK: Shared instance
+    // =================
     static let shared = WebServices()
     private init(){}
-    func getRepoInfo(plateform: Platform , org: String, completionHandler: @escaping (GitHubRepoModel?) -> Void , failedWithError: @escaping (String) -> Void ){
-        let url = "https://api.github.com/search/repositories?q=\(plateform.rawValue)+org:\(org)"
+    
+    // MARK: Member methods
+    // =================
+    func hitGetDataApi<R: Decodable>(url:String, completionHandler: @escaping (R?) -> Void , failedWithError: @escaping (String) -> Void ){
+        
         guard let uRL =  URL(string: url) else {return}
         var request = URLRequest(url: uRL , cachePolicy: .reloadIgnoringCacheData)
         request.httpMethod = "GET"
@@ -31,7 +33,7 @@ class WebServices {
             do{
                 let decoder = JSONDecoder()
                 decoder.dateDecodingStrategy = .iso8601
-                let parsedData = try decoder.decode(GitHubRepoModel.self, from: data)
+                let parsedData = try decoder.decode(R.self, from: data)
                 completionHandler(parsedData)
             }
             catch (let error) {
