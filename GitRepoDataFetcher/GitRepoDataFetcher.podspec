@@ -9,7 +9,7 @@ Pod::Spec.new do |spec|
   spec.author             = { "Govind Solanki" => "govind.solanki@appinventiv.com" }
   spec.platform     = :ios, "15.4"
   
-  spec.source       = { :git => "https://github.com/iosGovind/GitRepoDataFetcher.git", :tag => spec.version }
+  spec.source       = { :git => "https://github.com/iosGovind/GitRepoDataFetcher.git", :tag => spec.version.to_s }
 
   spec.source_files  = "GitRepoDataFetcher/**/*.{swift}"
   spec.swift_version = "5.6"
