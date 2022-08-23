@@ -30,6 +30,7 @@
 		8426CAD928B368BA00CF5C2B /* GitRepoDataFetcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitRepoDataFetcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8426CADB28B368BA00CF5C2B /* GitRepoDataFetcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitRepoDataFetcherTests.swift; sourceTree = "<group>"; };
 		8426CAE328B3696F00CF5C2B /* TestData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TestData.json; sourceTree = "<group>"; };
+		8426CB7C28B4C20300CF5C2B /* GitRepositoryDataFetcher.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = GitRepositoryDataFetcher.docc; sourceTree = "<group>"; };
 		844E98CB28AF63E200EA4088 /* GitRepoDataFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GitRepoDataFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		844E98CE28AF63E200EA4088 /* GitRepoDataFetcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GitRepoDataFetcher.h; sourceTree = "<group>"; };
 		844E98D528AF641700EA4088 /* GitRepoDataFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitRepoDataFetcher.swift; sourceTree = "<group>"; };
@@ -69,6 +70,7 @@
 		844E98C128AF63E200EA4088 = {
 			isa = PBXGroup;
 			children = (
+				8426CB7C28B4C20300CF5C2B /* GitRepositoryDataFetcher.docc */,
 				844E98CD28AF63E200EA4088 /* GitRepoDataFetcher */,
 				8426CADA28B368BA00CF5C2B /* GitRepoDataFetcherTests */,
 				844E98CC28AF63E200EA4088 /* Products */,
