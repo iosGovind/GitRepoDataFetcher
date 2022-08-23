@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: WebServices
 // =================
-class WebServices {
+internal class WebServices {
     // MARK: Shared instance
     // =================
     static let shared = WebServices()

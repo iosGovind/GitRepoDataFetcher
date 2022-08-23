@@ -6,7 +6,7 @@
 //
 
 import XCTest
-import GitRepoDataFetcher
+@testable import GitRepoDataFetcher
 
 class GitRepoDataFetcherTests: XCTestCase {
     
