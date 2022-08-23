@@ -3,9 +3,9 @@ import Foundation
 
 // MARK: - GitHubRepoModel
  public  struct GitHubRepoModel: Decodable {
-    let totalCount: Int
-    let incompleteResults: Bool
-    let items: [Item]
+    public let totalCount: Int
+    public let incompleteResults: Bool
+    public let items: [Item]
 
     enum CodingKeys: String, CodingKey {
         case totalCount = "total_count"
@@ -16,10 +16,10 @@ import Foundation
 
 // MARK: - Item
 public struct Item: Decodable {
-    let name: String
-    let itemPrivate: Bool
-    let itemDescription: String?
-    let language: String?
+    public let name: String
+    public let itemPrivate: Bool
+    public let itemDescription: String?
+    public let language: String?
 
     enum CodingKeys: String, CodingKey {
         case name
