@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
   
   spec.source       = { :git => "https://github.com/iosGovind/GitRepoDataFetcher.git", :tag => spec.version.to_s }
   spec.source_files  = "GitRepoDataFetcher/**/*.{swift}"
-  spec.exclude_files = 'GitRepoDataFetcher/GitRepoDataFetcher/GitRepoDataFetcherTests/**/*'
+  spec.exclude_files = 'GitRepoDataFetcherTests/**/*.{swift}'
   spec.framework = "XCTest"
   spec.swift_version = "5.6"
 end
