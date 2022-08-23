@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "GitRepoDataFetcher"
-  spec.version      = "1.0.1"
+  spec.version      = "1.0.2"
   spec.summary      = "GitRepoDataFetcher fetched a few details of a given repo and platefrom."
   spec.description  = "GitRepoDataFetcher fetched a few details ( such as name , privacy status ) of a given repo and platefrom."
   spec.homepage     = "https://github.com/iosGovind/GitRepoDataFetcher"
